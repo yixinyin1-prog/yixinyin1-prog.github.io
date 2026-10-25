@@ -1,16 +1,16 @@
 /* A rotatable content graph and tool atlas. Nodes are real, keyboard-accessible controls. */
 window.createPlayScene = function(stage, {kind='network', items=[], onSelect=()=>{}, motion=true}={}) {
   const canvas=stage.querySelector('canvas'),ctx=canvas.getContext('2d'),layer=stage.querySelector('.orbit-items');
-  const network=kind==='network', linked=network||kind==='platform';
+  const capability=kind==='capability', network=kind==='network'||capability, linked=network||kind==='platform';
   let w=0,h=0,rx=-.15,ry=.18,vx=0,vy=0,down=false,lastX=0,lastY=0,moved=0,raf=0,last=0;
   let auto=motion,alive=true,lastDrag=performance.now(),pressedNode=null,selected='',hovered='',inView=true;
   const sphere=(i,n,r=1.2)=>{const y=1-2*(i+.5)/n,a=Math.PI*(3-Math.sqrt(5))*i,s=Math.sqrt(1-y*y);return[r*s*Math.cos(a),r*y,r*s*Math.sin(a)];};
   const positions=items.map((_,i)=>sphere(i,items.length,network?1.24:1.32));
-  const mesh=Array.from({length:110},(_,i)=>sphere(i,110));
+  const mesh=Array.from({length:capability?70:110},(_,i)=>sphere(i,capability?70:110));
   const edges=[];
   mesh.forEach((p,i)=>mesh.map((q,j)=>({j,d:p.reduce((n,v,k)=>n+(v-q[k])**2,0)})).filter(x=>x.j!==i).sort((a,b)=>a.d-b.d).slice(0,5).forEach(x=>{if(x.j>i)edges.push([i,x.j]);}));
   const nodes=items.map(item=>{
-    const b=document.createElement('button');b.className=network?'orbit-node':'orbit-tool';b.type='button';b.innerHTML=item.html;
+    const b=document.createElement('button');b.className=capability?'orbit-node capability-node':network?'orbit-node':'orbit-tool';b.type='button';b.innerHTML=item.html;
     b.setAttribute('aria-label',item.label+(item.groupLabel?' · '+item.groupLabel:''));b.setAttribute('aria-pressed','false');b.dataset.item=item.id;
     b.onclick=e=>{if(e.detail===0)onSelect(item);};
     b.onpointerenter=()=>{hovered=item.id;};b.onpointerleave=()=>{hovered='';};
@@ -38,9 +38,9 @@ window.createPlayScene = function(stage, {kind='network', items=[], onSelect=()=
     if(network){
       for(const a of layout)a.x=Math.max(a.hw+5,Math.min(w-a.hw-5,a.x));
       // Seven content labels remain readable even when front and rear nodes align.
-      for(let pass=0;pass<10;pass++)for(let i=0;i<layout.length;i++)for(let j=i+1;j<layout.length;j++){
+      for(let pass=0;pass<12;pass++)for(let i=0;i<layout.length;i++)for(let j=i+1;j<layout.length;j++){
         const a=layout[i],b=layout[j],dx=Math.abs(a.x-b.x),dy=Math.abs(a.y-b.y),required=a.hh+b.hh+7;
-        if(dx<a.hw+b.hw+7&&dy<required){const shift=(required-dy)/2+.3,direction=a.y<=b.y?-1:1;a.y+=direction*shift;b.y-=direction*shift;}
+        if(dx<a.hw+b.hw+7&&dy<required){if(capability&&a.hw+b.hw+7-dx<required-dy){const shift=(a.hw+b.hw+7-dx)/2+.3,direction=a.x<=b.x?-1:1;a.x=Math.max(a.hw+5,Math.min(w-a.hw-5,a.x+direction*shift));b.x=Math.max(b.hw+5,Math.min(w-b.hw-5,b.x-direction*shift));}else{const shift=(required-dy)/2+.3,direction=a.y<=b.y?-1:1;a.y=Math.max(a.hh+6,Math.min(h-a.hh-14,a.y+direction*shift));b.y=Math.max(b.hh+6,Math.min(h-b.hh-14,b.y-direction*shift));}}
       }
       for(const a of layout){a.y=Math.max(a.hh+6,Math.min(h-a.hh-14,a.y));if(Math.abs(a.x-a.p.x)+Math.abs(a.y-a.p.y)>4)line(a.p,a,'rgba(202,230,172,.35)',.65);}
     }

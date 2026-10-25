@@ -3,9 +3,9 @@ window.PORTFOLIO = {
   "wechat": "yixin7023xiaoqian",
   "profile": {
     "name": "尹显魁",
-    "headline": "好奇心很杂，做事有章法。",
+    "headline": "好奇心不设限，行动派不下线。",
     "tagline": "内容编导 / 国内与跨境运营 / 知识分享者",
-    "intro": "我是尹显魁。镜头、数据和讲台，是我最熟悉的三个现场。\n做编导时，我琢磨一句话怎么说、一场戏怎么拍；做运营时，我追着内容走到曝光、咨询和成交；站上讲台，就把这些经验拆开，让方法能用起来。\n学动漫制作，也学心理学和法律；读商业、文学，也追小说和动漫。我喜欢不同领域的知识碰到一起，给眼前的问题一个新解法。\n空下来，去看电影、打球、旅行。认真做事，也认真寻找生活里的意思。",
+    "intro": "我的日常，常在三个窗口之间切换：镜头里的人，后台里的数，课堂里的“原来如此”。\n做内容，琢磨一句话怎么让人听进去；做运营，把点子一路追到曝光、咨询和成交；做教学，把走过的路整理成别人用得上的方法。\n动漫、心理学、法律，都是我打开世界的入口。爱钻进一个问题，也爱从一本书、一部电影里，顺手带走一个新想法。\n工作之外，看电影、追番、打球、出门走走。如果聊到有意思的选题、一本好书，或者一个值得试试的项目，大概率能聊很久。",
     "portrait": "assets/portrait-cutout-v7.png",
     "email": "383172756@qq.com",
     "wechat": "yixin7023xiaoqian"
@@ -23507,7 +23507,7 @@ window.PORTFOLIO = {
       "id": "book-2026-01",
       "title": "胆小如鼠",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
       "note": ""
     },
@@ -23515,135 +23515,183 @@ window.PORTFOLIO = {
       "id": "book-2026-02",
       "title": "干法",
       "year": "2026",
-      "category": "商业与创作",
+      "category": "商业经营",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-02.webp",
+      "coverSource": "https://book.douban.com/subject/26648884/",
+      "author": "[日] 稻盛和夫"
     },
     {
       "id": "book-2026-03",
       "title": "阿米巴经营",
       "year": "2026",
-      "category": "商业与创作",
+      "category": "商业经营",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-03.webp",
+      "coverSource": "https://book.douban.com/subject/4118751/",
+      "author": "[日] 稻盛和夫"
     },
     {
       "id": "book-2026-04",
       "title": "学习变现",
       "year": "2026",
-      "category": "表达与学习",
+      "category": "学习成长",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-04.webp",
+      "coverSource": "https://book.douban.com/subject/35406707/",
+      "author": "[日] 清水久三子"
     },
     {
       "id": "book-2026-05",
       "title": "西西弗神话",
       "year": "2026",
-      "category": "思维与认知",
+      "category": "哲学思想",
       "readStatus": "在读",
-      "note": "原书单标注：未看完。"
+      "note": "原书单标注：未看完。",
+      "cover": "assets/book-cover-2026-05.webp",
+      "coverSource": "https://book.douban.com/subject/35271657/",
+      "author": "（法）阿尔贝·加缪"
     },
     {
       "id": "book-2026-06",
       "title": "被讨厌的勇气",
       "year": "2026",
-      "category": "心理与沟通",
+      "category": "心理认知",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-06.webp",
+      "coverSource": "https://book.douban.com/subject/26369699/",
+      "author": "[日] 岸见一郎"
     },
     {
       "id": "book-2026-07",
       "title": "百年孤独",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "在读",
-      "note": "原书单标注：未看完。"
+      "note": "原书单标注：未看完。",
+      "cover": "assets/book-cover-2026-07.webp",
+      "coverSource": "https://book.douban.com/subject/6082808/",
+      "author": "[哥伦比亚] 加西亚·马尔克斯"
     },
     {
       "id": "book-2026-08",
       "title": "我会一次次接住自己",
       "year": "2026",
-      "category": "心理与沟通",
+      "category": "心理认知",
       "readStatus": "在读",
-      "note": "原书单标注：未看完。"
+      "note": "原书单标注：未看完。",
+      "cover": "assets/book-cover-2026-08.webp",
+      "coverSource": "https://book.douban.com/subject/37502441/",
+      "author": "云云狗"
     },
     {
       "id": "book-2026-09",
       "title": "胖虎下山",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "漫画绘本",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-09.webp",
+      "coverSource": "https://book.douban.com/subject/35701255/",
+      "author": "不二马"
     },
     {
       "id": "book-2026-10",
       "title": "有钱人和你想的不一样",
       "year": "2026",
-      "category": "思维与认知",
+      "category": "财富理财",
       "readStatus": "已读",
-      "note": "个人评价：不咋样。"
+      "note": "个人评价：不咋样。",
+      "cover": "assets/book-cover-2026-10.webp",
+      "coverSource": "https://book.douban.com/subject/38226186/",
+      "author": "[美]哈维·艾克（T.Harv Eker）"
     },
     {
       "id": "book-2026-11",
       "title": "非暴力沟通",
       "year": "2026",
-      "category": "心理与沟通",
+      "category": "沟通表达",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-11.webp",
+      "coverSource": "https://book.douban.com/subject/3533221/",
+      "author": "[美] 马歇尔·卢森堡"
     },
     {
       "id": "book-2026-12",
       "title": "老人与海",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-12.webp",
+      "coverSource": "https://book.douban.com/subject/30338134/",
+      "author": "[美] 欧内斯特·海明威"
     },
     {
       "id": "book-2026-13",
       "title": "沧浪之水",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-13.webp",
+      "coverSource": "https://book.douban.com/subject/1054917/",
+      "author": "阎真"
     },
     {
       "id": "book-2026-14",
       "title": "灿烂千阳",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-14.webp",
+      "coverSource": "https://book.douban.com/subject/2143732/",
+      "author": "[美] 卡勒德·胡赛尼"
     },
     {
       "id": "book-2026-15",
       "title": "桃花源没事儿",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-15.webp",
+      "coverSource": "https://book.douban.com/subject/37339619/",
+      "author": "马伯庸"
     },
     {
       "id": "book-2026-16",
       "title": "克莱因壶",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "在读",
-      "note": "原书单标注：未看完。"
+      "note": "原书单标注：未看完。",
+      "cover": "assets/book-cover-2026-16.webp",
+      "coverSource": "https://book.douban.com/subject/33658616/",
+      "author": "[日] 冈岛二人"
     },
     {
       "id": "book-2026-17",
       "title": "人生只有一件事",
       "year": "2026",
-      "category": "思维与认知",
+      "category": "哲学思想",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-17.webp",
+      "coverSource": "https://book.douban.com/subject/35372997/",
+      "author": "金惟纯"
     },
     {
       "id": "book-2026-18",
       "title": "在巴东",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "传记纪实",
       "readStatus": "已读",
       "note": ""
     },
@@ -23651,15 +23699,18 @@ window.PORTFOLIO = {
       "id": "book-2026-19",
       "title": "瓦尔登湖",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "散文诗歌",
       "readStatus": "已读",
-      "note": "个人评价：不咋样。"
+      "note": "个人评价：不咋样。",
+      "cover": "assets/book-cover-2026-19.webp",
+      "coverSource": "https://book.douban.com/subject/1865089/",
+      "author": "[美] 梭罗"
     },
     {
       "id": "book-2026-20",
       "title": "手把手教你养小龙虾",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "AI与技术",
       "readStatus": "已读",
       "note": ""
     },
@@ -23667,63 +23718,84 @@ window.PORTFOLIO = {
       "id": "book-2026-21",
       "title": "一地鸡毛",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-21.webp",
+      "coverSource": "https://book.douban.com/subject/36061380/",
+      "author": "刘震云"
     },
     {
       "id": "book-2026-22",
       "title": "置身事内",
       "year": "2026",
-      "category": "商业与创作",
+      "category": "法律社会",
       "readStatus": "在读",
-      "note": "原书单标注：未看完。"
+      "note": "原书单标注：未看完。",
+      "cover": "assets/book-cover-2026-22.webp",
+      "coverSource": "https://book.douban.com/subject/35546622/",
+      "author": "兰小欢"
     },
     {
       "id": "book-2026-23",
       "title": "麦田里的守望者",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2026-23.webp",
+      "coverSource": "https://book.douban.com/subject/2053249/",
+      "author": "[美国] J. D. 塞林格"
     },
     {
       "id": "book-2026-24",
       "title": "在路上",
       "year": "2026",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "在读",
-      "note": "原书单标注：未看完。"
+      "note": "原书单标注：未看完。",
+      "cover": "assets/book-cover-2026-24.webp",
+      "coverSource": "https://book.douban.com/subject/1917972/",
+      "author": "[美] 杰克·凯鲁亚克"
     },
     {
       "id": "book-2025-01",
       "title": "律师之道",
       "year": "2025",
-      "category": "法律与社会",
+      "category": "法律社会",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-01.webp",
+      "coverSource": "https://book.douban.com/subject/4849550/",
+      "author": "君合律师事务所"
     },
     {
       "id": "book-2025-02",
       "title": "摆摊式创业",
       "year": "2025",
-      "category": "商业与创作",
+      "category": "商业经营",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-02.webp",
+      "coverSource": "https://book.douban.com/subject/37097315/",
+      "author": "黄碧云"
     },
     {
       "id": "book-2025-03",
       "title": "持续买入",
       "year": "2025",
-      "category": "商业与创作",
+      "category": "财富理财",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-03.webp",
+      "coverSource": "https://book.douban.com/subject/37165036/",
+      "author": "[美] 尼克·马吉奥利"
     },
     {
       "id": "book-2025-04",
       "title": "带货王薇娅",
       "year": "2025",
-      "category": "商业与创作",
+      "category": "内容营销",
       "readStatus": "已读",
       "note": ""
     },
@@ -23731,23 +23803,29 @@ window.PORTFOLIO = {
       "id": "book-2025-05",
       "title": "即兴演讲",
       "year": "2025",
-      "category": "表达与学习",
+      "category": "沟通表达",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-05.webp",
+      "coverSource": "https://book.douban.com/subject/35806826/",
+      "author": "[加]朱迪思·汉弗莱"
     },
     {
       "id": "book-2025-06",
       "title": "从0开始做内容",
       "year": "2025",
-      "category": "商业与创作",
+      "category": "内容营销",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-06.webp",
+      "coverSource": "https://book.douban.com/subject/35219451/",
+      "author": "吕白"
     },
     {
       "id": "book-2025-07",
       "title": "我所有的朋友都死了",
       "year": "2025",
-      "category": "文学与生活",
+      "category": "漫画绘本",
       "readStatus": "已读",
       "note": ""
     },
@@ -23755,119 +23833,161 @@ window.PORTFOLIO = {
       "id": "book-2025-08",
       "title": "悉达多",
       "year": "2025",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-08.webp",
+      "coverSource": "https://book.douban.com/subject/26980487/",
+      "author": "[德] 赫尔曼·黑塞"
     },
     {
       "id": "book-2025-09",
       "title": "蛤蟆先生去看心理医生",
       "year": "2025",
-      "category": "心理与沟通",
+      "category": "心理认知",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-09.webp",
+      "coverSource": "https://book.douban.com/subject/35143790/",
+      "author": "[英] 罗伯特·戴博德"
     },
     {
       "id": "book-2025-10",
       "title": "长安的荔枝",
       "year": "2025",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-10.webp",
+      "coverSource": "https://book.douban.com/subject/36104107/",
+      "author": "马伯庸"
     },
     {
       "id": "book-2025-11",
       "title": "多卖三倍",
       "year": "2025",
-      "category": "商业与创作",
+      "category": "商业经营",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-11.webp",
+      "coverSource": "https://book.douban.com/subject/35618341/",
+      "author": "弗兰克"
     },
     {
       "id": "book-2025-12",
       "title": "底层逻辑",
       "year": "2025",
-      "category": "思维与认知",
+      "category": "心理认知",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-12.webp",
+      "coverSource": "https://book.douban.com/subject/35620025/",
+      "author": "刘润"
     },
     {
       "id": "book-2025-13",
       "title": "白鹿原",
       "year": "2025",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-13.webp",
+      "coverSource": "https://book.douban.com/subject/27047454/",
+      "author": "陈忠实"
     },
     {
       "id": "book-2025-14",
       "title": "房思琪的初恋乐园",
       "year": "2025",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-14.webp",
+      "coverSource": "https://book.douban.com/subject/27614904/",
+      "author": "林奕含"
     },
     {
       "id": "book-2025-15",
       "title": "开口就能说重点",
       "year": "2025",
-      "category": "表达与学习",
+      "category": "沟通表达",
       "readStatus": "已读",
-      "note": "个人评价：不好的书。"
+      "note": "个人评价：不好的书。",
+      "cover": "assets/book-cover-2025-15.webp",
+      "coverSource": "https://book.douban.com/subject/26851966/",
+      "author": "斋藤孝"
     },
     {
       "id": "book-2025-16",
       "title": "浪潮式发售",
       "year": "2025",
-      "category": "商业与创作",
+      "category": "内容营销",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-16.webp",
+      "coverSource": "https://book.douban.com/subject/26735302/",
+      "author": "[美] 杰夫.沃克（Jeff Walker）"
     },
     {
       "id": "book-2025-17",
       "title": "当下的力量",
       "year": "2025",
-      "category": "思维与认知",
+      "category": "哲学思想",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-17.webp",
+      "coverSource": "https://book.douban.com/subject/26815948/",
+      "author": "[德] 埃克哈特·托利"
     },
     {
       "id": "book-2025-18",
       "title": "我不是潘金莲",
       "year": "2025",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-18.webp",
+      "coverSource": "https://book.douban.com/subject/36061268/",
+      "author": "刘震云"
     },
     {
       "id": "book-2025-19",
       "title": "你当像鸟飞往你的山",
       "year": "2025",
-      "category": "文学与生活",
+      "category": "传记纪实",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-19.webp",
+      "coverSource": "https://book.douban.com/subject/33440205/",
+      "author": "[美] 塔拉·韦斯特弗"
     },
     {
       "id": "book-2025-20",
       "title": "爆款文案写作指南",
       "year": "2025",
-      "category": "商业与创作",
+      "category": "内容营销",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-20.webp",
+      "coverSource": "https://book.douban.com/subject/34864950/",
+      "author": "李洛克"
     },
     {
       "id": "book-2025-21",
       "title": "有梗",
       "year": "2025",
-      "category": "表达与学习",
+      "category": "沟通表达",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-21.webp",
+      "coverSource": "https://book.douban.com/subject/35167369/",
+      "author": "黄西"
     },
     {
       "id": "book-2025-22",
       "title": "强势文化手册",
       "year": "2025",
-      "category": "思维与认知",
+      "category": "心理认知",
       "readStatus": "已读",
       "note": ""
     },
@@ -23875,23 +23995,29 @@ window.PORTFOLIO = {
       "id": "book-2025-23",
       "title": "了凡四训",
       "year": "2025",
-      "category": "思维与认知",
+      "category": "哲学思想",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-23.webp",
+      "coverSource": "https://book.douban.com/subject/3226595/",
+      "author": "[明]袁了凡撰"
     },
     {
       "id": "book-2025-24",
       "title": "断舍离",
       "year": "2025",
-      "category": "文学与生活",
+      "category": "生活实践",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-2025-24.webp",
+      "coverSource": "https://book.douban.com/subject/24749465/",
+      "author": "山下英子"
     },
     {
       "id": "book-2025-25",
       "title": "枕上诗书",
       "year": "2025",
-      "category": "文学与生活",
+      "category": "散文诗歌",
       "readStatus": "已读",
       "note": ""
     },
@@ -23899,7 +24025,7 @@ window.PORTFOLIO = {
       "id": "book-2025-26",
       "title": "主播世界",
       "year": "2025",
-      "category": "商业与创作",
+      "category": "内容营销",
       "readStatus": "已读",
       "note": ""
     },
@@ -23907,7 +24033,7 @@ window.PORTFOLIO = {
       "id": "book-2025-27",
       "title": "我在精神病院学斩神",
       "year": "2025",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
       "note": ""
     },
@@ -23915,23 +24041,29 @@ window.PORTFOLIO = {
       "id": "book-earlier-01",
       "title": "天才在左疯子在右",
       "year": "2025以前",
-      "category": "心理与沟通",
+      "category": "传记纪实",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-01.webp",
+      "coverSource": "https://book.douban.com/subject/30419261/",
+      "author": "高铭"
     },
     {
       "id": "book-earlier-02",
       "title": "许三观卖血记",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-02.webp",
+      "coverSource": "https://book.douban.com/subject/4760224/",
+      "author": "余华"
     },
     {
       "id": "book-earlier-03",
       "title": "一句顶万句",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
       "note": ""
     },
@@ -23939,63 +24071,84 @@ window.PORTFOLIO = {
       "id": "book-earlier-04",
       "title": "天幕红尘",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-04.webp",
+      "coverSource": "https://book.douban.com/subject/24748615/",
+      "author": "豆豆"
     },
     {
       "id": "book-earlier-05",
       "title": "背叛",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-05.webp",
+      "coverSource": "https://book.douban.com/subject/1578545/",
+      "author": "豆豆"
     },
     {
       "id": "book-earlier-06",
       "title": "遥远的救世主",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-06.webp",
+      "coverSource": "https://book.douban.com/subject/1322455/",
+      "author": "豆豆"
     },
     {
       "id": "book-earlier-07",
       "title": "肖申克的救赎",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-07.webp",
+      "coverSource": "https://book.douban.com/subject/1829226/",
+      "author": "[美] 斯蒂芬·金"
     },
     {
       "id": "book-earlier-08",
       "title": "法治的细节",
       "year": "2025以前",
-      "category": "法律与社会",
+      "category": "法律社会",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-08.webp",
+      "coverSource": "https://book.douban.com/subject/35635639/",
+      "author": "罗翔"
     },
     {
       "id": "book-earlier-09",
       "title": "活着",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-09.webp",
+      "coverSource": "https://book.douban.com/subject/4913064/",
+      "author": "余华"
     },
     {
       "id": "book-earlier-10",
       "title": "NLP：自我改变的惊人秘密",
       "year": "2025以前",
-      "category": "心理与沟通",
+      "category": "心理认知",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-10.webp",
+      "coverSource": "https://book.douban.com/subject/27074814/",
+      "author": "（美）理查德·班德勒"
     },
     {
       "id": "book-earlier-11",
       "title": "大王饶命",
       "year": "2025以前",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
       "note": ""
     },
@@ -24003,7 +24156,7 @@ window.PORTFOLIO = {
       "id": "book-earlier-12",
       "title": "武动乾坤",
       "year": "2025以前",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
       "note": ""
     },
@@ -24011,15 +24164,18 @@ window.PORTFOLIO = {
       "id": "book-earlier-13",
       "title": "斗破苍穹",
       "year": "2025以前",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-13.webp",
+      "coverSource": "https://book.douban.com/subject/22933018/",
+      "author": "天蚕土豆"
     },
     {
       "id": "book-earlier-14",
       "title": "斗罗大陆",
       "year": "2025以前",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
       "note": ""
     },
@@ -24027,7 +24183,7 @@ window.PORTFOLIO = {
       "id": "book-earlier-15",
       "title": "全职法师",
       "year": "2025以前",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
       "note": ""
     },
@@ -24035,39 +24191,51 @@ window.PORTFOLIO = {
       "id": "book-earlier-16",
       "title": "鲁滨逊漂流记",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-16.webp",
+      "coverSource": "https://book.douban.com/subject/35300658/",
+      "author": "[英国] 丹尼尔·笛福"
     },
     {
       "id": "book-earlier-17",
       "title": "骆驼祥子",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-17.webp",
+      "coverSource": "https://book.douban.com/subject/1043815/",
+      "author": "老舍"
     },
     {
       "id": "book-earlier-18",
       "title": "格列佛游记",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-18.webp",
+      "coverSource": "https://book.douban.com/subject/4872916/",
+      "author": "乔纳森•斯威夫特 (Jonathan Swift)"
     },
     {
       "id": "book-earlier-19",
       "title": "第一序列",
       "year": "2025以前",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-19.webp",
+      "coverSource": "https://book.douban.com/subject/35377987/",
+      "author": "会说话的肘子"
     },
     {
       "id": "book-earlier-20",
       "title": "少年歌行",
       "year": "2025以前",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
       "note": ""
     },
@@ -24075,7 +24243,7 @@ window.PORTFOLIO = {
       "id": "book-earlier-21",
       "title": "君有云",
       "year": "2025以前",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
       "note": ""
     },
@@ -24083,7 +24251,7 @@ window.PORTFOLIO = {
       "id": "book-earlier-22",
       "title": "少年白马醉春风",
       "year": "2025以前",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
       "note": ""
     },
@@ -24091,7 +24259,7 @@ window.PORTFOLIO = {
       "id": "book-earlier-23",
       "title": "一念永恒",
       "year": "2025以前",
-      "category": "幻想与冒险",
+      "category": "网络文学",
       "readStatus": "已读",
       "note": ""
     },
@@ -24099,7 +24267,7 @@ window.PORTFOLIO = {
       "id": "book-earlier-24",
       "title": "狼道",
       "year": "2025以前",
-      "category": "思维与认知",
+      "category": "心理认知",
       "readStatus": "已读",
       "note": ""
     },
@@ -24107,15 +24275,18 @@ window.PORTFOLIO = {
       "id": "book-earlier-25",
       "title": "厚黑学",
       "year": "2025以前",
-      "category": "思维与认知",
+      "category": "哲学思想",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-25.webp",
+      "coverSource": "https://book.douban.com/subject/1911687/",
+      "author": "李宗吾"
     },
     {
       "id": "book-earlier-26",
       "title": "胡雪岩传",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "传记纪实",
       "readStatus": "已读",
       "note": ""
     },
@@ -24123,15 +24294,18 @@ window.PORTFOLIO = {
       "id": "book-earlier-27",
       "title": "人性的弱点",
       "year": "2025以前",
-      "category": "心理与沟通",
+      "category": "沟通表达",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-27.webp",
+      "coverSource": "https://book.douban.com/subject/26954744/",
+      "author": "[美]戴尔·卡耐基"
     },
     {
       "id": "book-earlier-28",
       "title": "心理学一本通",
       "year": "2025以前",
-      "category": "心理与沟通",
+      "category": "心理认知",
       "readStatus": "已读",
       "note": ""
     },
@@ -24139,31 +24313,40 @@ window.PORTFOLIO = {
       "id": "book-earlier-29",
       "title": "读大学究竟读什么",
       "year": "2025以前",
-      "category": "表达与学习",
+      "category": "学习成长",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-29.webp",
+      "coverSource": "https://book.douban.com/subject/1731825/",
+      "author": "覃彪喜"
     },
     {
       "id": "book-earlier-30",
       "title": "玩的就是心机",
       "year": "2025以前",
-      "category": "心理与沟通",
+      "category": "心理认知",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-30.webp",
+      "coverSource": "https://book.douban.com/subject/34454349/",
+      "author": "路天章"
     },
     {
       "id": "book-earlier-31",
       "title": "活法",
       "year": "2025以前",
-      "category": "思维与认知",
+      "category": "哲学思想",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-31.webp",
+      "coverSource": "https://book.douban.com/subject/1269900/",
+      "author": "（日）稻盛和夫"
     },
     {
       "id": "book-earlier-32",
       "title": "国际注册培训师",
       "year": "2025以前",
-      "category": "表达与学习",
+      "category": "学习成长",
       "readStatus": "已读",
       "note": ""
     },
@@ -24171,7 +24354,7 @@ window.PORTFOLIO = {
       "id": "book-earlier-33",
       "title": "五星人格",
       "year": "2025以前",
-      "category": "心理与沟通",
+      "category": "心理认知",
       "readStatus": "已读",
       "note": ""
     },
@@ -24179,15 +24362,18 @@ window.PORTFOLIO = {
       "id": "book-earlier-35",
       "title": "你的能力要学会用故事讲出来",
       "year": "2025以前",
-      "category": "表达与学习",
+      "category": "沟通表达",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-35.webp",
+      "coverSource": "https://book.douban.com/subject/27598118/",
+      "author": "王小辉"
     },
     {
       "id": "book-earlier-36",
       "title": "社群营销实战宝典",
       "year": "2025以前",
-      "category": "商业与创作",
+      "category": "内容营销",
       "readStatus": "已读",
       "note": ""
     },
@@ -24195,7 +24381,7 @@ window.PORTFOLIO = {
       "id": "book-earlier-37",
       "title": "法律指南",
       "year": "2025以前",
-      "category": "法律与社会",
+      "category": "法律社会",
       "readStatus": "已读",
       "note": ""
     },
@@ -24203,55 +24389,73 @@ window.PORTFOLIO = {
       "id": "book-earlier-38",
       "title": "狂人日记",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "文学小说",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-38.webp",
+      "coverSource": "https://book.douban.com/subject/1398395/",
+      "author": "鲁迅"
     },
     {
       "id": "book-earlier-39",
       "title": "飞鸟集",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "散文诗歌",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-39.webp",
+      "coverSource": "https://book.douban.com/subject/1058661/",
+      "author": "[印] 罗宾德拉纳德·泰戈尔"
     },
     {
       "id": "book-earlier-40",
       "title": "销售铁军",
       "year": "2025以前",
-      "category": "商业与创作",
+      "category": "商业经营",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-40.webp",
+      "coverSource": "https://book.douban.com/subject/34108874/",
+      "author": "贺学友"
     },
     {
       "id": "book-earlier-41",
       "title": "小群效应",
       "year": "2025以前",
-      "category": "商业与创作",
+      "category": "内容营销",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-41.webp",
+      "coverSource": "https://book.douban.com/subject/27168595/",
+      "author": "徐志斌"
     },
     {
       "id": "book-earlier-42",
       "title": "社群营销",
       "year": "2025以前",
-      "category": "商业与创作",
+      "category": "内容营销",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-42.webp",
+      "coverSource": "https://book.douban.com/subject/26828718/",
+      "author": "秋叶"
     },
     {
       "id": "book-earlier-43",
       "title": "好看的皮囊千篇一律有趣的灵魂万里挑一",
       "year": "2025以前",
-      "category": "文学与生活",
+      "category": "散文诗歌",
       "readStatus": "已读",
-      "note": ""
+      "note": "",
+      "cover": "assets/book-cover-earlier-43.webp",
+      "coverSource": "https://book.douban.com/subject/27661940/",
+      "author": "老杨的猫头鹰"
     },
     {
       "id": "book-earlier-44",
       "title": "法律全知道",
       "year": "2025以前",
-      "category": "法律与社会",
+      "category": "法律社会",
       "readStatus": "已读",
       "note": ""
     }
@@ -25814,13 +26018,21 @@ window.PORTFOLIO = {
     }
   ],
   "bookCategories": [
-    "文学与生活",
-    "商业与创作",
-    "表达与学习",
-    "思维与认知",
-    "心理与沟通",
-    "法律与社会",
-    "幻想与冒险"
+    "文学小说",
+    "商业经营",
+    "学习成长",
+    "哲学思想",
+    "心理认知",
+    "漫画绘本",
+    "财富理财",
+    "沟通表达",
+    "传记纪实",
+    "散文诗歌",
+    "AI与技术",
+    "法律社会",
+    "内容营销",
+    "生活实践",
+    "网络文学"
   ],
   "traits": [
     {
