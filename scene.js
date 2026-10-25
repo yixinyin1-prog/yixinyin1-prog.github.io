@@ -22,12 +22,12 @@ window.createPlayScene = function(stage, {kind='network', items=[], onSelect=()=
   function graph(){
     const pts=mesh.map(project);
     for(const [i,j] of edges){const a=pts[i],b=pts[j],front=Math.max(0,Math.min(1,(1.2-(a.z+b.z)/2)/2.4));line(a,b,'rgba(183,204,171,'+(.035+front*.24)+')',.65);}
-    for(const p of pts){const front=(1.2-p.z)/2.4;ctx.beginPath();ctx.arc(p.x,p.y,.7+front*1.15,0,Math.PI*2);ctx.fillStyle='rgba(221,244,203,'+(.13+front*.6)+')';ctx.fill();}
+    for(const p of pts){const front=(1.2-p.z)/2.4;ctx.beginPath();ctx.arc(p.x,p.y,.7+front*1.15,0,Math.PI*2);ctx.fillStyle='rgba(218,225,204,'+(.13+front*.6)+')';ctx.fill();}
     const anchor=items.findIndex(x=>x.id===(hovered||selected));
-    if(anchor>=0){const a=project(positions[anchor]);positions.forEach((p,i)=>{if(i===anchor)return;const b=project(p);line(a,b,'rgba(216,255,103,.26)',.8);ctx.beginPath();ctx.arc(b.x,b.y,3,0,Math.PI*2);ctx.fillStyle='#d8ff67';ctx.fill();});}
+    if(anchor>=0){const a=project(positions[anchor]);positions.forEach((p,i)=>{if(i===anchor)return;const b=project(p);line(a,b,'rgba(201,185,142,.26)',.8);ctx.beginPath();ctx.arc(b.x,b.y,3,0,Math.PI*2);ctx.fillStyle='#c9b98e';ctx.fill();});}
   }
   function toolOrbits(){
-    for(let i=0;i<3;i++){ctx.beginPath();for(let j=0;j<=90;j++){const a=j/90*Math.PI*2,p=project(i===0?[1.28*Math.cos(a),1.28*Math.sin(a),0]:i===1?[1.28*Math.cos(a),0,1.28*Math.sin(a)]:[0,1.28*Math.cos(a),1.28*Math.sin(a)]);j?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y);}ctx.strokeStyle='rgba(216,255,103,.15)';ctx.lineWidth=.8;ctx.stroke();}
+    for(let i=0;i<3;i++){ctx.beginPath();for(let j=0;j<=90;j++){const a=j/90*Math.PI*2,p=project(i===0?[1.28*Math.cos(a),1.28*Math.sin(a),0]:i===1?[1.28*Math.cos(a),0,1.28*Math.sin(a)]:[0,1.28*Math.cos(a),1.28*Math.sin(a)]);j?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y);}ctx.strokeStyle='rgba(201,185,142,.15)';ctx.lineWidth=.8;ctx.stroke();}
   }
   function draw(){
     ctx.clearRect(0,0,w,h);
