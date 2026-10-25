@@ -1,4 +1,4 @@
-/* Geometry for a camera looking along +Z at a physical, rotating sphere. */
+/* An open spatial network. Labels retain a readable up direction at every rotation. */
 window.PortfolioOrbitGeometry = (() => {
   const camera=4.8;
   const norm=p=>{const l=Math.hypot(...p);return p.map(v=>v/l);};
@@ -8,7 +8,18 @@ window.PortfolioOrbitGeometry = (() => {
   function frame(p,rx,ry){const n=norm(p),u=Math.hypot(n[0],n[2])<1e-8?[1,0,0]:norm([-n[2],0,n[0]]),v=cross(u,n);return{q:rotate(p,rx,ry),u:rotate(u,rx,ry),v:rotate(v,rx,ry),n:rotate(n,rx,ry)};}
   function facing(q){const radius=Math.hypot(...q),distance=Math.hypot(q[0],q[1],q[2]+camera);return(-camera*q[2]-radius*radius)/(radius*distance);}
   function project(q,r,w,h){const k=camera/(camera+q[2]);return{x:w/2+q[0]*r*k,y:h/2+q[1]*r*k,z:q[2],k};}
-  function transform(p,rx,ry,r,w,h){const{q,u,v,n}=frame(p,rx,ry),matrix=[u[0],u[1],-u[2],0,v[0],v[1],-v[2],0,n[0],n[1],-n[2],0,q[0]*r,q[1]*r,-q[2]*r,1];return`translate3d(${w/2}px,${h/2}px,0) perspective(${camera*r}px) matrix3d(${matrix.map(v=>v.toFixed(6)).join(',')}) translate(-50%,-50%)`;}
+  function labelState(q){
+    const radius=Math.hypot(...q),depth=(1-q[2]/radius)/2;
+    // Mild spatial tilt, never a rotated baseline, flipped glyph, or disappearing rear face.
+    const yaw=q[0]/radius*.34,pitch=-q[1]/radius*.20,scale=.90+.10*depth;
+    return{depth,yaw,pitch,scale,opacity:.40+.60*depth*depth*(3-2*depth)};
+  }
+  function labelMatrix(q,r){
+    const{yaw,pitch,scale:s}=labelState(q),cy=Math.cos(yaw),sy=Math.sin(yaw),cx=Math.cos(pitch),sx=Math.sin(pitch);
+    // CSS Ry * Rx: the screen-up and screen-right components always stay positive.
+    return[cy*s,0,-sy*s,0,sy*sx*s,cx*s,cy*sx*s,0,sy*cx,-sx,cx*cy,0,q[0]*r,q[1]*r,-q[2]*r,1];
+  }
+  function transform(p,rx,ry,r,w,h){const q=rotate(p,rx,ry),matrix=labelMatrix(q,r);return`translate3d(${w/2}px,${h/2}px,0) perspective(${camera*r}px) matrix3d(${matrix.map(v=>v.toFixed(6)).join(',')}) translate(-50%,-50%)`;}
   function frontAngles(p){return{rx:Math.atan2(-p[1],Math.hypot(p[0],p[2])),ry:Math.atan2(p[0],-p[2])};}
-  return{camera,sphere,rotate,frame,facing,project,transform,frontAngles};
+  return{camera,sphere,rotate,frame,facing,project,transform,frontAngles,labelState,labelMatrix};
 })();
