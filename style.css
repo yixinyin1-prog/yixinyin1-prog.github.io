@@ -110,5 +110,16 @@ dialog[data-kind=script] .workbook-table{max-height:none;flex:1}
 .viewer-status p{font-size:12px;color:#acb7b0}
 .viewer-status button{border:1px solid #849774;border-radius:30px;padding:12px 24px}
 .viewer-image-wrap img.media-failed{visibility:hidden}
+/* Video feedback stays below the picture; native controls always remain visible. */
+.video-quality{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:15px 0 4px;font-size:12px;color:#a8b6b0}
+.video-quality>span{margin-right:auto}
+.video-quality button,.video-notice button{border:1px solid #52645a;border-radius:22px;padding:10px 16px;color:#dce5d7;font-size:12px;min-height:42px}
+.video-quality button[aria-pressed=true]{background:#c8d9ab;color:#18231d;border-color:#c8d9ab}
+.video-notice{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:13px 15px;margin-top:12px;border-radius:10px;background:#202b29;color:#c4d2c4;font-size:12px;line-height:1.8}
+.video-notice[hidden],.video-notice button[hidden]{display:none!important}
+.video-notice p{margin:0;flex:1}
+.video-notice button{flex-shrink:0;background:#334239}
+.video-notice[data-state=error],.video-notice[data-state=slow]{background:#302c25}
+@media(max-width:650px){dialog[data-kind=video]{max-height:94dvh;overflow:auto}dialog[data-kind=video] video{max-height:60dvh;min-height:200px}.video-notice{align-items:flex-start;flex-direction:column;gap:10px}.video-quality{font-size:11px}.video-quality button{font-size:11px;padding:8px 13px}}
 .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 @media(max-width:750px){.about-facets{grid-template-columns:1fr;gap:22px;margin:48px 0}.about-facets>header>p:last-child{max-width:none}.about-hobbies-v8{padding:25px}.facet-grid{gap:0 22px}.facet-grid article{gap:12px;padding:21px 0}.facet-grid h3{font-size:21px}.facet-grid p{font-size:11px}.about-anchor{gap:8px;margin-bottom:28px;padding-top:0}.about-anchor button{padding:8px 12px;font-size:10px}.script-section-heading h2{font-size:18px!important}.script-section-heading{gap:12px;align-items:flex-start}.script-section-heading>button{font-size:10px;padding:8px 11px}.sheet-toolbar{font-size:10px;align-items:center;padding:12px}.sheet-toolbar small{font-size:8px}.workbook-table.table-scroll th,.workbook-table.table-scroll td{padding:14px 11px}.script-sheet-index{max-height:180px;overflow:auto}.script-sheet-index button{font-size:10px}dialog[data-kind=script] #viewer-body{padding:8px;height:calc(100% - 63px)}}

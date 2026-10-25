@@ -75,7 +75,8 @@ window.PORTFOLIO = {
       "category": "人物 IP",
       "duration": "03:28",
       "src": "assets/ip-web.mp4",
-      "poster": "assets/ip-poster.webp"
+      "poster": "assets/ip-poster.webp",
+      "mobileSrc": "assets/ip-web-mobile-v1.mp4"
     },
     {
       "id": "food",
@@ -83,7 +84,8 @@ window.PORTFOLIO = {
       "category": "餐饮美食",
       "duration": "01:21",
       "src": "assets/food-web.mp4",
-      "poster": "assets/food-poster.webp"
+      "poster": "assets/food-poster.webp",
+      "mobileSrc": "assets/food-web-mobile-v1.mp4"
     },
     {
       "id": "roast",
@@ -91,7 +93,8 @@ window.PORTFOLIO = {
       "category": "餐饮美食",
       "duration": "00:57",
       "src": "assets/roast-web.mp4",
-      "poster": "assets/roast-poster.webp"
+      "poster": "assets/roast-poster.webp",
+      "mobileSrc": "assets/roast-web-mobile-v1.mp4"
     },
     {
       "id": "film-01",
@@ -106,7 +109,8 @@ window.PORTFOLIO = {
       "bytes": 37017690,
       "sha256": "6e54c9b6ff30981938318c8b86b5d288207fe9ff1c90a8f6ccc38d154e46beba",
       "posterBytes": 96422,
-      "posterSha256": "67654c4db87a3b6b01b13286e6c8dcdff9c489d8ad8bf20ba653048aac8c0db8"
+      "posterSha256": "67654c4db87a3b6b01b13286e6c8dcdff9c489d8ad8bf20ba653048aac8c0db8",
+      "mobileSrc": "assets/portrait-ip-01-mobile-v1.mp4"
     },
     {
       "id": "film-02",
@@ -121,7 +125,8 @@ window.PORTFOLIO = {
       "bytes": 39254984,
       "sha256": "8f7960b8a117ac898bad040f44ea78588e9f91e633adb42d395884d41fe95828",
       "posterBytes": 95754,
-      "posterSha256": "60389d127c9b8415e57b464214d530fbcc0007c820705563385ac4bdcd4e94b6"
+      "posterSha256": "60389d127c9b8415e57b464214d530fbcc0007c820705563385ac4bdcd4e94b6",
+      "mobileSrc": "assets/portrait-ip-02-mobile-v1.mp4"
     },
     {
       "id": "film-03",
@@ -136,7 +141,8 @@ window.PORTFOLIO = {
       "bytes": 13404258,
       "sha256": "eee94286dabd3d001d8d21045aef9281552f7b2dc24f1d86fda530aa081e80cb",
       "posterBytes": 98520,
-      "posterSha256": "f2bc5a79c8aa43cdf776a91e69ab703e644da424bc9895c3270e02d812c6d663"
+      "posterSha256": "f2bc5a79c8aa43cdf776a91e69ab703e644da424bc9895c3270e02d812c6d663",
+      "mobileSrc": "assets/product-brand-01-mobile-v1.mp4"
     },
     {
       "id": "film-04",
@@ -151,7 +157,8 @@ window.PORTFOLIO = {
       "bytes": 12628222,
       "sha256": "0c603dd35246b06529f45b37160e098e3b50f67b0fe6a1fbf60d5e5cee8bcd89",
       "posterBytes": 82760,
-      "posterSha256": "2b17a6df7aba3c7e399f2d7ff670f9ce7100aa698d40bddbf28961b6c7de4028"
+      "posterSha256": "2b17a6df7aba3c7e399f2d7ff670f9ce7100aa698d40bddbf28961b6c7de4028",
+      "mobileSrc": "assets/product-brand-02-mobile-v1.mp4"
     },
     {
       "id": "film-05",
@@ -166,7 +173,8 @@ window.PORTFOLIO = {
       "bytes": 16178786,
       "sha256": "98cc3b10eb72f17480ee922d08dc401a509df14f54a385c3b45b521e5364ed6f",
       "posterBytes": 107484,
-      "posterSha256": "8b7effa6233ae659e21548d8163957f7a127676408c83a405a204b61ae2fe934"
+      "posterSha256": "8b7effa6233ae659e21548d8163957f7a127676408c83a405a204b61ae2fe934",
+      "mobileSrc": "assets/product-brand-03-mobile-v1.mp4"
     },
     {
       "id": "film-07",
@@ -181,7 +189,8 @@ window.PORTFOLIO = {
       "bytes": 3572160,
       "sha256": "fdf43ed3d515d9e6b322f9b91368863860092f80c4df6bb89cfb7924a8ce40c4",
       "posterBytes": 46035,
-      "posterSha256": "020a1e8621aedc241236aa731eba74e58c042d55a292b2d183ff53e2526de080"
+      "posterSha256": "020a1e8621aedc241236aa731eba74e58c042d55a292b2d183ff53e2526de080",
+      "mobileSrc": "assets/food-01-mobile-v1.mp4"
     },
     {
       "id": "film-08",
@@ -201,7 +210,8 @@ window.PORTFOLIO = {
       "bytes": 12846895,
       "sha256": "f49762b13a0ca0b5cf6140b04e1873aca1f471f0820f25b9782e7bc28df1460d",
       "posterBytes": 65674,
-      "posterSha256": "686ac8d0c42c6b0245cf91f81f1440f7eb2a662bf8a53fa2fae58be1cf92e7d5"
+      "posterSha256": "686ac8d0c42c6b0245cf91f81f1440f7eb2a662bf8a53fa2fae58be1cf92e7d5",
+      "mobileSrc": "assets/food-02-mobile-v1.mp4"
     },
     {
       "id": "film-09",
@@ -221,7 +231,8 @@ window.PORTFOLIO = {
       "bytes": 31487547,
       "sha256": "607c1f1717672cce760e11aec181082981a02eb189d29ebcf88d4eea95820c2a",
       "posterBytes": 40604,
-      "posterSha256": "1d05329912619ef96a825733e98a7179dcd9b3009fd7a793528f6892f8215439"
+      "posterSha256": "1d05329912619ef96a825733e98a7179dcd9b3009fd7a793528f6892f8215439",
+      "mobileSrc": "assets/food-03-mobile-v1.mp4"
     },
     {
       "id": "film-10",
@@ -241,7 +252,8 @@ window.PORTFOLIO = {
       "bytes": 9667422,
       "sha256": "02f90db225ddfc57d78109a3a21ff4a2858ef73144d99a17aa9f43d9dc869fe4",
       "posterBytes": 65916,
-      "posterSha256": "2b0764b03e134c30627ba58b062c7a423d76c4a39ea01a1b39ab91ffc9fba214"
+      "posterSha256": "2b0764b03e134c30627ba58b062c7a423d76c4a39ea01a1b39ab91ffc9fba214",
+      "mobileSrc": "assets/food-04-mobile-v1.mp4"
     },
     {
       "id": "film-11",
@@ -261,7 +273,8 @@ window.PORTFOLIO = {
       "bytes": 6618819,
       "sha256": "a4b1e1347d8e5125a7f664795cc3302c0fc2c494e8b74cf5c8f9c36507716ce4",
       "posterBytes": 77348,
-      "posterSha256": "560dc28c1a8e175579762a93e9b52735f0614635e32aba55f7ffd1850480e5e9"
+      "posterSha256": "560dc28c1a8e175579762a93e9b52735f0614635e32aba55f7ffd1850480e5e9",
+      "mobileSrc": "assets/food-05-mobile-v1.mp4"
     },
     {
       "id": "film-12",
@@ -281,7 +294,8 @@ window.PORTFOLIO = {
       "bytes": 32955145,
       "sha256": "c507af47101bd36b6c36a7eafc24b912d4ed8ac75dea833f97c8984d68be825d",
       "posterBytes": 69097,
-      "posterSha256": "a03d8c680d0ed2df4a7b031d121b9edbbc08281cefaef205af5f4e2ecd84fbf4"
+      "posterSha256": "a03d8c680d0ed2df4a7b031d121b9edbbc08281cefaef205af5f4e2ecd84fbf4",
+      "mobileSrc": "assets/real-estate-01-mobile-v1.mp4"
     },
     {
       "id": "film-13",
@@ -301,7 +315,8 @@ window.PORTFOLIO = {
       "bytes": 31781441,
       "sha256": "ad1d70449aad8fcd90b761d4244dbdb19d04971e624e3aed58cb0058c49770ac",
       "posterBytes": 9291,
-      "posterSha256": "d9b4d7c790a89c6d24217f997399f8c553efec3e49d5b5823ea3e122b5ff158b"
+      "posterSha256": "d9b4d7c790a89c6d24217f997399f8c553efec3e49d5b5823ea3e122b5ff158b",
+      "mobileSrc": "assets/real-estate-02-mobile-v1.mp4"
     },
     {
       "id": "film-14",
@@ -321,7 +336,8 @@ window.PORTFOLIO = {
       "bytes": 29868811,
       "sha256": "a3a4df343b5d4cd312ab6b3bf44ca9fc2b2063adb4ca1984a2c47e2bc2b1ddce",
       "posterBytes": 44181,
-      "posterSha256": "ea943adbbb76ce181b1019f3e14ba39b5c4ba1cfc4c34f75123ce64bfad90554"
+      "posterSha256": "ea943adbbb76ce181b1019f3e14ba39b5c4ba1cfc4c34f75123ce64bfad90554",
+      "mobileSrc": "assets/real-estate-03-mobile-v1.mp4"
     },
     {
       "id": "film-15",
@@ -341,7 +357,8 @@ window.PORTFOLIO = {
       "bytes": 25751011,
       "sha256": "90461a05eecb12f848c76b6c80591efdaae9533987f68c2a698a07f4589002cf",
       "posterBytes": 35491,
-      "posterSha256": "ce047600d1003340464c061488f09133e4dd9f86f872011e658b7d9693d7f1ea"
+      "posterSha256": "ce047600d1003340464c061488f09133e4dd9f86f872011e658b7d9693d7f1ea",
+      "mobileSrc": "assets/real-estate-04-mobile-v1.mp4"
     },
     {
       "id": "film-16",
@@ -361,7 +378,8 @@ window.PORTFOLIO = {
       "bytes": 15444322,
       "sha256": "8b7c12b4eeb2c58bada7f1e03ecd604a91773c2b16f714151b5598e05596533e",
       "posterBytes": 65320,
-      "posterSha256": "5a3389cf73af4f14b79ec00c016fc4435ff80477347c2731c6cd212560336823"
+      "posterSha256": "5a3389cf73af4f14b79ec00c016fc4435ff80477347c2731c6cd212560336823",
+      "mobileSrc": "assets/beauty-01-mobile-v1.mp4"
     },
     {
       "id": "film-17",
@@ -381,7 +399,8 @@ window.PORTFOLIO = {
       "bytes": 15634637,
       "sha256": "3fa09fd22b85c4f40c9b90cc2fac4c71faacaee0e2af576ded85743f3d79bfa2",
       "posterBytes": 27469,
-      "posterSha256": "37765050e2f02f364631edaea0087b052c3cfcafec59bfdc3fb32f35a00bf30e"
+      "posterSha256": "37765050e2f02f364631edaea0087b052c3cfcafec59bfdc3fb32f35a00bf30e",
+      "mobileSrc": "assets/retail-01-mobile-v1.mp4"
     },
     {
       "id": "film-18",
@@ -401,7 +420,8 @@ window.PORTFOLIO = {
       "bytes": 19791786,
       "sha256": "ca85c01d17616454165cb4a9d1973fba2e9995c77544a31385dd5d92ed5f4861",
       "posterBytes": 88910,
-      "posterSha256": "f60cac941893b53e12acc7765faf36844e0bf40f0b1fc9ef1dbd983ec48c2c01"
+      "posterSha256": "f60cac941893b53e12acc7765faf36844e0bf40f0b1fc9ef1dbd983ec48c2c01",
+      "mobileSrc": "assets/retail-02-mobile-v1.mp4"
     },
     {
       "id": "film-19",
@@ -421,7 +441,8 @@ window.PORTFOLIO = {
       "bytes": 13641459,
       "sha256": "b89b72e0c62a12924b794a093b9aca102fefe323e63902a779c69bcaf821efe8",
       "posterBytes": 153997,
-      "posterSha256": "cf7b2effa2e4eeed59a21346599ee4bf7e89e019df1e75c2d19dc5d02d324474"
+      "posterSha256": "cf7b2effa2e4eeed59a21346599ee4bf7e89e019df1e75c2d19dc5d02d324474",
+      "mobileSrc": "assets/retail-03-mobile-v1.mp4"
     },
     {
       "id": "film-20",
@@ -436,7 +457,8 @@ window.PORTFOLIO = {
       "bytes": 16937289,
       "sha256": "a6885071ec4e73971b52fe8d47efc5870262a8b7a51c9eb920b937688c1859b0",
       "posterBytes": 206752,
-      "posterSha256": "94694eeb0db810b1c80e27f4bbeb0b254a273f32976451479d60226f9fad85fc"
+      "posterSha256": "94694eeb0db810b1c80e27f4bbeb0b254a273f32976451479d60226f9fad85fc",
+      "mobileSrc": "assets/retail-04-mobile-v1.mp4"
     },
     {
       "id": "film-21",
@@ -451,7 +473,8 @@ window.PORTFOLIO = {
       "bytes": 6134365,
       "sha256": "7e0ab7d16ebe273ba413f97c5c18184215a8753e860a17ee57ba0b6e8f3bf585",
       "posterBytes": 118636,
-      "posterSha256": "ec661e79c7e157d768e90a9699b2bc676dda35c200a9ebc84aba239c1cb35947"
+      "posterSha256": "ec661e79c7e157d768e90a9699b2bc676dda35c200a9ebc84aba239c1cb35947",
+      "mobileSrc": "assets/medical-01-mobile-v1.mp4"
     },
     {
       "id": "film-22",
@@ -466,7 +489,8 @@ window.PORTFOLIO = {
       "bytes": 11572703,
       "sha256": "501e334b6321ea0dacb5509f7ef920f176343f4b7a72a3f50eaf5678c1dda8d6",
       "posterBytes": 55619,
-      "posterSha256": "61adbba6eb19ff9a6e2a86dc05178e065eecc2d7c0904aa97dc60f67d6212c05"
+      "posterSha256": "61adbba6eb19ff9a6e2a86dc05178e065eecc2d7c0904aa97dc60f67d6212c05",
+      "mobileSrc": "assets/medical-02-mobile-v1.mp4"
     },
     {
       "id": "film-23",
@@ -486,7 +510,8 @@ window.PORTFOLIO = {
       "bytes": 24549646,
       "sha256": "af3db2fe6c2747ccce4878de8067b6a69cb110da7604ee82e5e7e9131bc8b643",
       "posterBytes": 64802,
-      "posterSha256": "20beecfde79d2fd4fc1743cc89f27793a1efa1cd83e9fde9a3c487fa40594f50"
+      "posterSha256": "20beecfde79d2fd4fc1743cc89f27793a1efa1cd83e9fde9a3c487fa40594f50",
+      "mobileSrc": "assets/medical-03-mobile-v1.mp4"
     },
     {
       "id": "film-24",
@@ -506,7 +531,8 @@ window.PORTFOLIO = {
       "bytes": 14682725,
       "sha256": "2b98090b6cace80d8fa853e8be109d2678d4b21a2526a8cc8d578904f3e72c29",
       "posterBytes": 152568,
-      "posterSha256": "71cb7764d72f87edd5b5da738d73e139d1100fb24ecbaecff00b48e98a6b974d"
+      "posterSha256": "71cb7764d72f87edd5b5da738d73e139d1100fb24ecbaecff00b48e98a6b974d",
+      "mobileSrc": "assets/business-01-mobile-v1.mp4"
     },
     {
       "id": "film-25",
@@ -526,7 +552,8 @@ window.PORTFOLIO = {
       "bytes": 34044386,
       "sha256": "1ab60dec098003816dda6a385c366396b840a74e50fdac97ca97932fd852419b",
       "posterBytes": 193585,
-      "posterSha256": "eae08959f27049bdab8d3d7cbfe03c09b9fa3f71d6ad20e8fb17ef0374eb0c61"
+      "posterSha256": "eae08959f27049bdab8d3d7cbfe03c09b9fa3f71d6ad20e8fb17ef0374eb0c61",
+      "mobileSrc": "assets/business-02-mobile-v1.mp4"
     },
     {
       "id": "film-26",
@@ -546,7 +573,8 @@ window.PORTFOLIO = {
       "bytes": 46519205,
       "sha256": "8183805bdf0c953b3a6d706aa37bac6da8fe2b11769a9dd3eb80dfa9a6775f84",
       "posterBytes": 151440,
-      "posterSha256": "8e5f719b32c83d9c037f4bbcfcee4e680b21250b45698e4ba3d4e3d9e4821aa6"
+      "posterSha256": "8e5f719b32c83d9c037f4bbcfcee4e680b21250b45698e4ba3d4e3d9e4821aa6",
+      "mobileSrc": "assets/business-03-mobile-v1.mp4"
     },
     {
       "id": "film-27",
@@ -566,7 +594,8 @@ window.PORTFOLIO = {
       "bytes": 17609564,
       "sha256": "ea3a44d8dba365a86235941a8f8d27da63bc3029e9adc3573fd87780a0f8ab63",
       "posterBytes": 104014,
-      "posterSha256": "16d66cea4e5f0da3d1346f152ea504531ddac03f0233c481975148276c14b5f6"
+      "posterSha256": "16d66cea4e5f0da3d1346f152ea504531ddac03f0233c481975148276c14b5f6",
+      "mobileSrc": "assets/business-04-mobile-v1.mp4"
     },
     {
       "id": "film-28",
@@ -586,7 +615,8 @@ window.PORTFOLIO = {
       "bytes": 12214734,
       "sha256": "a7e5dd39e898e699238c114bae9f5bbfb018590ff511a8cc0cd5164c896e6289",
       "posterBytes": 107254,
-      "posterSha256": "41726c6c82159589ec66a4f5c3fd1ce16d7049463f8f47b2cae3e6d21ededaa5"
+      "posterSha256": "41726c6c82159589ec66a4f5c3fd1ce16d7049463f8f47b2cae3e6d21ededaa5",
+      "mobileSrc": "assets/business-05-mobile-v1.mp4"
     }
   ],
   "scripts": [
