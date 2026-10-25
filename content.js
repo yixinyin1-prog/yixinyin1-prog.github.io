@@ -26067,7 +26067,7 @@ window.PORTFOLIO = {
       "id": "reading",
       "title": "阅读",
       "description": "从文学到商业，在别人的故事里拓宽自己的世界。",
-      "image": "assets/hobby-reading.svg",
+      "image": "assets/hobby-reading-v12.svg",
       "link": "books",
       "cta": "看看我的书架"
     },
@@ -26075,25 +26075,25 @@ window.PORTFOLIO = {
       "id": "writing",
       "title": "写作与分享",
       "description": "把零散的想法写下来，让它们慢慢连成自己的表达。",
-      "image": "assets/hobby-writing.svg"
+      "image": "assets/hobby-writing-v12.svg"
     },
     {
       "id": "cinema",
       "title": "看电影",
       "description": "喜欢故事，也留意镜头、对白和人物之间的分寸。",
-      "image": "assets/hobby-cinema.svg"
+      "image": "assets/hobby-cinema-v12.png"
     },
     {
       "id": "anime",
       "title": "追番",
       "description": "让想象力出走一会儿，去另一个世界看看。",
-      "image": "assets/hobby-anime.svg"
+      "image": "assets/hobby-anime-v12.png"
     },
     {
       "id": "sport",
       "title": "打球",
       "description": "把注意力交给眼前的球，也给大脑换一种节奏。",
-      "image": "assets/hobby-sport.svg"
+      "image": "assets/hobby-sport-v12.png"
     }
   ],
   "readingRecords": [
