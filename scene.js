@@ -21,8 +21,8 @@ window.createPlayScene = function(stage, {kind='network', items=[], onSelect=()=
   function line(a,b,color,width=.7){ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.stroke();}
   function graph(){
     const pts=mesh.map(project);
-    for(const [i,j] of edges){const a=pts[i],b=pts[j],front=Math.max(0,Math.min(1,(1.2-(a.z+b.z)/2)/2.4));line(a,b,'rgba(183,204,171,'+(.035+front*.24)+')',.65);}
-    for(const p of pts){const front=(1.2-p.z)/2.4;ctx.beginPath();ctx.arc(p.x,p.y,.7+front*1.15,0,Math.PI*2);ctx.fillStyle='rgba(218,225,204,'+(.13+front*.6)+')';ctx.fill();}
+    for(const [i,j] of edges){const a=pts[i],b=pts[j],front=Math.max(0,Math.min(1,(1.2-(a.z+b.z)/2)/2.4));line(a,b,'rgba(113,226,169,'+(.07+front*.32)+')',.65);}
+    for(const p of pts){const front=(1.2-p.z)/2.4;ctx.beginPath();ctx.arc(p.x,p.y,.7+front*1.15,0,Math.PI*2);ctx.fillStyle='rgba(210,255,217,'+(.25+front*.7)+')';ctx.fill();}
     const anchor=items.findIndex(x=>x.id===(hovered||selected));
     if(anchor>=0){const a=project(positions[anchor]);positions.forEach((p,i)=>{if(i===anchor)return;const b=project(p);line(a,b,'rgba(201,185,142,.26)',.8);ctx.beginPath();ctx.arc(b.x,b.y,3,0,Math.PI*2);ctx.fillStyle='#c9b98e';ctx.fill();});}
   }
@@ -32,9 +32,9 @@ window.createPlayScene = function(stage, {kind='network', items=[], onSelect=()=
   function draw(){
     ctx.clearRect(0,0,w,h);
     const glow=ctx.createRadialGradient(w/2,h/2,0,w/2,h/2,Math.min(w,h)*.5);
-    glow.addColorStop(0,'rgba(174,207,116,.065)');glow.addColorStop(1,'rgba(174,207,116,0)');ctx.fillStyle=glow;ctx.fillRect(0,0,w,h);
+    glow.addColorStop(0,'rgba(57,212,132,.11)');glow.addColorStop(1,'rgba(57,212,132,0)');ctx.fillStyle=glow;ctx.fillRect(0,0,w,h);
     linked?graph():toolOrbits();
-    const layout=nodes.map((b,i)=>{const p=project(positions[i]),front=(1.4-p.z)/2.8,scale=network?.86+front*.17:.69+front*.43;return{b,p,front,scale,x:p.x,y:p.y,hw:b.offsetWidth*scale/2,hh:b.offsetHeight*scale/2};});
+    const layout=nodes.map((b,i)=>{const p=project(positions[i]),front=(1.4-p.z)/2.8,scale=capability?1:network?.95+front*.07:.82+front*.22;return{b,p,front,scale,x:p.x,y:p.y,hw:b.offsetWidth*scale/2,hh:b.offsetHeight*scale/2};});
     if(network){
       for(const a of layout)a.x=Math.max(a.hw+5,Math.min(w-a.hw-5,a.x));
       // Seven content labels remain readable even when front and rear nodes align.
@@ -45,7 +45,7 @@ window.createPlayScene = function(stage, {kind='network', items=[], onSelect=()=
       for(const a of layout){a.y=Math.max(a.hh+6,Math.min(h-a.hh-14,a.y));if(Math.abs(a.x-a.p.x)+Math.abs(a.y-a.p.y)>4)line(a.p,a,'rgba(202,230,172,.35)',.65);}
     }
     layout.forEach(({b,p,front,scale,x,y})=>{
-      b.style.transform='translate('+x+'px,'+y+'px) translate(-50%,-50%) scale('+scale+')';b.style.opacity=String(network?.68+front*.32:.38+front*.62);b.style.zIndex=String(Math.round(100-p.z*30));
+      b.style.transform='translate('+x+'px,'+y+'px) translate(-50%,-50%) scale('+scale+')';b.style.opacity=String(capability?1:network?.9+front*.1:.72+front*.28);b.style.zIndex=String(Math.round(100-p.z*30));
     });
     stage.dataset.rotation=rx.toFixed(3)+','+ry.toFixed(3);
   }
