@@ -20,4 +20,5 @@ body{background:radial-gradient(ellipse at 9% 0,#2c3c2a60,transparent 850px),rad
 html[data-motion=off] .page-heading,html[data-motion=off] .reader-content{animation:none!important}
 .reading-header>div:not(.reading-mark){display:block}.book-detail-cover .real-book-cover img{object-fit:cover}
 .feedback-wall{columns:auto!important;column-count:1!important;column-gap:normal!important}
+dialog[data-kind=book]{width:min(880px,94vw);height:fit-content;max-height:90dvh;overflow:auto;background:#1b2820;border-color:#68785b;border-radius:5px;color:#e9e9d8}dialog[data-kind=book]>header{position:sticky;top:0;z-index:2;background:#1b2820;border-color:#60734e55}dialog[data-kind=book]>header button{border-color:#71805a99}dialog[data-kind=book] #viewer-body{height:auto;overflow:visible;padding:12px}.book-detail-v10 h2{white-space:normal;overflow:visible;text-overflow:clip}
 @media(max-width:800px){.page-heading>div{align-items:flex-start;text-align:left}}
