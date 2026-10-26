@@ -261,7 +261,9 @@
 
   function sync() {
     enabled = root.dataset.motion !== 'off' && !reduce.matches;
-    pointerEnabled = enabled && fine.matches && innerWidth > 800;
+    // Mobile keeps the artwork and sphere, without continuous decorative scroll work.
+    enabled = enabled && innerWidth > 800 && fine.matches;
+    pointerEnabled = enabled;
     root.dataset.kinetic = enabled ? 'on' : 'off';
     root.dataset.kineticPointer = pointerEnabled ? 'on' : 'off';
     if (!enabled || !pointerEnabled) {

@@ -2,7 +2,8 @@
 window.createPlayScene = function(stage, {kind='network', items=[], onSelect=()=>{}, motion=true}={}) {
   const G=window.PortfolioOrbitGeometry,canvas=stage.querySelector('canvas'),ctx=canvas.getContext('2d'),layer=stage.querySelector('.orbit-items');
   const capability=kind==='capability', network=kind==='network'||capability, linked=network||kind==='platform';
-  let w=0,h=0,rx=-.15,ry=.18,vx=0,vy=0,down=false,lastX=0,lastY=0,moved=0,raf=0,last=0,pointerTime=0;
+  let w=0,h=0,rx=-.15,ry=.18,vx=0,vy=0,down=false,lastX=0,lastY=0,moved=0,raf=0,last=0,pointerTime=0,touchIntent=null,dirty=true;
+  const compact=()=>window.matchMedia?.('(max-width: 800px), (pointer: coarse)').matches||false;
   let auto=motion,alive=true,lastDrag=performance.now(),pressedNode=null,selected='',hovered='',inView=true,target=null;
   const sphere=G.sphere;
   const positions=items.map((_,i)=>sphere(i,items.length,network?1.24:1.32));
@@ -13,7 +14,7 @@ window.createPlayScene = function(stage, {kind='network', items=[], onSelect=()=
     const b=document.createElement('button');b.className=capability?'orbit-node capability-node':network?'orbit-node':'orbit-tool';b.type='button';b.innerHTML=item.html;
     b.setAttribute('aria-label',item.label+(item.groupLabel?' · '+item.groupLabel:''));b.setAttribute('aria-pressed','false');b.dataset.item=item.id;
     b.onclick=e=>{if(e.detail===0){reveal(item.id);onSelect(item);}};
-    b.onpointerenter=()=>{hovered=item.id;};b.onpointerleave=()=>{hovered='';};
+    b.onpointerenter=()=>{hovered=item.id;dirty=true;};b.onpointerleave=()=>{hovered='';dirty=true;};
     b.onfocus=()=>{hovered=item.id;lastDrag=performance.now();};b.onblur=()=>{hovered='';};layer.append(b);return b;
   });
   const radius=()=>Math.min(w,h)*(capability?.32:network?.34:.29);
@@ -48,15 +49,15 @@ window.createPlayScene = function(stage, {kind='network', items=[], onSelect=()=
     if(instant||!auto){rx=angles.rx;ry=angles.ry;target=null;draw();}else target={rx:rx+delta(angles.rx,rx),ry:ry+delta(angles.ry,ry)};
   }
   function loop(t){
-    if(!alive)return;raf=requestAnimationFrame(loop);if(document.hidden||!inView){last=t;return;}const dt=Math.min(Math.max((t-last)/1000,.001),.04);last=t;
-    if(!down){if(target){const ease=1-Math.exp(-8*dt);rx+=(target.rx-rx)*ease;ry+=(target.ry-ry)*ease;if(Math.abs(target.rx-rx)+Math.abs(target.ry-ry)<.001){rx=target.rx;ry=target.ry;target=null;}}else{if(auto&&!hovered&&t-lastDrag>4000)ry+=(network?.065:.09)*dt;rx+=vy*dt;ry+=vx*dt;const friction=Math.exp(-4.6*dt);vx*=friction;vy*=friction;if(Math.abs(vx)<.0005)vx=0;if(Math.abs(vy)<.0005)vy=0;}}draw();
+    if(!alive)return;raf=requestAnimationFrame(loop);if(document.hidden||!inView){last=t;return;}if(compact()&&t-last<32)return;const dt=Math.min(Math.max((t-last)/1000,.001),.06);last=t;const beforeX=rx,beforeY=ry;
+    if(!down){if(target){const ease=1-Math.exp(-8*dt);rx+=(target.rx-rx)*ease;ry+=(target.ry-ry)*ease;if(Math.abs(target.rx-rx)+Math.abs(target.ry-ry)<.001){rx=target.rx;ry=target.ry;target=null;}}else{if(auto&&!hovered&&t-lastDrag>4000)ry+=(network?.065:.09)*dt;rx+=vy*dt;ry+=vx*dt;const friction=Math.exp(-4.6*dt);vx*=friction;vy*=friction;if(Math.abs(vx)<.0005)vx=0;if(Math.abs(vy)<.0005)vy=0;}}if(dirty||rx!==beforeX||ry!==beforeY){dirty=false;draw();}
   }
-  function resize(){const r=stage.getBoundingClientRect();w=r.width;h=r.height;const dpr=Math.min(devicePixelRatio||1,2);canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);draw();}
+  function resize(){const r=stage.getBoundingClientRect();w=r.width;h=r.height;const dpr=Math.min(devicePixelRatio||1,compact()?1.5:2);canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);draw();}
   const ro=new ResizeObserver(resize);ro.observe(stage);
   const io=new IntersectionObserver(([entry])=>{inView=entry.isIntersecting;});io.observe(stage);
-  function start(e){if(e.button!==0)return;e.preventDefault();pressedNode=e.target.closest('.orbit-node,.orbit-tool');down=true;target=null;moved=0;vx=vy=0;lastX=e.clientX;lastY=e.clientY;pointerTime=performance.now();stage.setPointerCapture(e.pointerId);stage.classList.add('dragging');stage.dataset.dragging='true';lastDrag=pointerTime;}
-  function move(e){if(!down)return;const dx=e.clientX-lastX,dy=e.clientY-lastY,now=performance.now(),dt=Math.max((now-pointerTime)/1000,.008);moved+=Math.abs(dx)+Math.abs(dy);ry+=dx*.0045;rx+=dy*.004;vx=Math.max(-2.8,Math.min(2.8,dx*.0045/dt));vy=Math.max(-2.8,Math.min(2.8,dy*.004/dt));pointerTime=now;lastX=e.clientX;lastY=e.clientY;draw();}
-  function end(e){if(!down)return;down=false;stage.classList.remove('dragging');stage.dataset.dragging='false';lastDrag=performance.now();if(stage.hasPointerCapture(e.pointerId))stage.releasePointerCapture(e.pointerId);if(!auto||lastDrag-pointerTime>100||e.type==='pointercancel')vx=vy=0;if(e.type==='pointerup'&&moved<6&&pressedNode){const item=items.find(x=>x.id===pressedNode.dataset.item);if(item){reveal(item.id);onSelect(item);}}pressedNode=null;}
+  function start(e){if(e.button!==0)return;const touch=e.pointerType==='touch';if(!touch)e.preventDefault();pressedNode=e.target.closest('.orbit-node,.orbit-tool');down=true;target=null;moved=0;vx=vy=0;lastX=e.clientX;lastY=e.clientY;pointerTime=performance.now();touchIntent=touch?{x:e.clientX,y:e.clientY}:null;if(!touch){stage.setPointerCapture(e.pointerId);stage.classList.add('dragging');stage.dataset.dragging='true';}lastDrag=pointerTime;}
+  function move(e){if(!down)return;if(touchIntent){const x=Math.abs(e.clientX-touchIntent.x),y=Math.abs(e.clientY-touchIntent.y);if(Math.max(x,y)<8)return;if(y>x){down=false;touchIntent=null;pressedNode=null;return;}touchIntent=null;stage.setPointerCapture(e.pointerId);stage.classList.add('dragging');stage.dataset.dragging='true';}const dx=e.clientX-lastX,dy=e.clientY-lastY,now=performance.now(),dt=Math.max((now-pointerTime)/1000,.008);moved+=Math.abs(dx)+Math.abs(dy);ry+=dx*.0045;rx+=dy*.004;vx=Math.max(-2.8,Math.min(2.8,dx*.0045/dt));vy=Math.max(-2.8,Math.min(2.8,dy*.004/dt));pointerTime=now;lastX=e.clientX;lastY=e.clientY;draw();}
+  function end(e){touchIntent=null;if(!down)return;down=false;stage.classList.remove('dragging');stage.dataset.dragging='false';lastDrag=performance.now();if(stage.hasPointerCapture(e.pointerId))stage.releasePointerCapture(e.pointerId);if(!auto||lastDrag-pointerTime>100||e.type==='pointercancel')vx=vy=0;if(e.type==='pointerup'&&moved<6&&pressedNode){const item=items.find(x=>x.id===pressedNode.dataset.item);if(item){reveal(item.id);onSelect(item);}}pressedNode=null;}
   function keys(e){if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home'].includes(e.key))return;e.preventDefault();lastDrag=performance.now();vx=vy=0;target=null;if(e.key==='Home'){reveal(selected||items[0]?.id,true);return;}if(e.key==='ArrowLeft')ry-=.15;if(e.key==='ArrowRight')ry+=.15;if(e.key==='ArrowUp')rx-=.15;if(e.key==='ArrowDown')rx+=.15;draw();}
   stage.addEventListener('pointerdown',start);stage.addEventListener('pointermove',move);stage.addEventListener('pointerup',end);stage.addEventListener('pointercancel',end);stage.addEventListener('keydown',keys);resize();raf=requestAnimationFrame(loop);
   return {dispose(){alive=false;cancelAnimationFrame(raf);ro.disconnect();io.disconnect();stage.removeEventListener('pointerdown',start);stage.removeEventListener('pointermove',move);stage.removeEventListener('pointerup',end);stage.removeEventListener('pointercancel',end);stage.removeEventListener('keydown',keys);},reset(){reveal(selected||items[0]?.id,true);},reveal,motion(value){auto=value;if(!auto){vx=vy=0;if(target){rx=target.rx;ry=target.ry;target=null;draw();}}},select(id){selected=id;nodes.forEach(b=>{b.classList.toggle('picked',b.dataset.item===id);b.setAttribute('aria-pressed',b.dataset.item===id);});draw();}};
