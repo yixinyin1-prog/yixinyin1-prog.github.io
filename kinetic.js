@@ -16,10 +16,10 @@
     '.program-visual', '.feedback-feature', '.platform-chapter', '.battle-process article',
     '.connection-preview', '.subject-panel-v14', '.capability-focus-v14',
     '.software-detail-v14', '.learning-trail>article', '.youtube-metrics>div',
-    '.overseas-proof-card', '.evidence-image'
+    '.overseas-proof-card', '.evidence-image', '.preview-picture', '.portal-v16>a', '.featured-media', '.featured-manuscript', '.operation-proof>button'
   ].join(',');
   const tiltSelector = '.portrait-editorial-v13,.type-card,.subject-tabs-v14 button,.film-cover,.book-cover,.life-photo,.education-duo>article,.script-card';
-  const revealSelector = '.page-heading,.network-title,.about-copy-v13,.portrait-editorial-v13,.section-heading,.trait-spread-v14>article,.type-card,.hobbies-v12 .facet-grid article,.life-photo,.subject-tabs-v14 button,.subject-panel-v14,.program-grid>article,.film-card,.script-card,.book-object,.education-duo>article,.certificate-cards>button,.strategy-card,.service-grid>article,.battle-process article,.contact-prelude,.contact-title-row,.contact-lines,.skills-mode-bar,.skills-studio-v14,.software-studio-v14,.platform-chapter,.learning-trail>article';
+  const revealSelector = '.page-heading,.network-title,.about-copy-v13,.portrait-editorial-v13,.section-heading,.trait-spread-v14>article,.type-card,.hobbies-v12 .facet-grid article,.life-photo,.subject-tabs-v14 button,.subject-panel-v14,.program-grid>article,.film-card,.script-card,.book-object,.education-duo>article,.certificate-cards>button,.strategy-card,.service-grid>article,.battle-process article,.contact-prelude,.contact-title-row,.contact-lines,.skills-mode-bar,.skills-studio-v14,.software-studio-v14,.platform-chapter,.learning-trail>article,.featured-works,.operation-spotlight,.portal-v16>a';
   const magneticSelector = '.contact-invitation,.text-link,.all-link,.brand,.scene-toolbar button,.chapter-index-v14 button';
   const decorativeSelector = '.subject-tab-art,.subject-large-art,.entj-prism,.libra-sculpture,.trait-index>i,.education-topline>svg,.reading-mark';
   const states = new Map();
