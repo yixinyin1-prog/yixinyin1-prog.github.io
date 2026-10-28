@@ -8,7 +8,7 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
   const fine = matchMedia('(hover: hover) and (pointer: fine)');
   const surfaceSelector = [
-    '.portrait-editorial-v13', '.type-card', '.subject-tabs-v14 button',
+    '.home-portrait-v18', '.about-snapshot-v18', '.contact-photo-v18', '.portrait-editorial-v13', '.type-card', '.subject-tabs-v14 button',
     '.film-cover', '.book-cover', '.hobbies-v12 .facet-grid article',
     '.life-photo', '.strategy-card', '.education-duo>article',
     '.certificate-cards>button', '.service-grid>article', '.script-card',
